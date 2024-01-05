@@ -14,10 +14,11 @@ class ChatBot extends StatefulWidget {
 }
 
 class _ChatBotState extends State<ChatBot> {
+  //add api key at the end
   final geminiProVision =
-      '';
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro-vision:generateContent?key=API_KEY';
   final geminiPro =
-      "";
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=API_KEY";
 
   final header = {'Content-Type': 'application/json'};
   Uint8List? selectedImage;
